@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Bubble Game</title>
+	<link rel="stylesheet" type="text/css" href="css/BubbleGame.css" />
+</head>
+
+<body onmousedown="posCursor(event)" onresize="Resize()" onload="Resize()">
+	<header>
+		Jogo da Bolhas utilizando HTML5/CSS3/Javascript
+	</header>
+	<!-- Audio em Background -->
+	<audio id="bgsound">
+		<source src="sons/bgsound.wav" type="audio/wav">
+	</audio>
+	
+	<!-- Audio Estourar Bolha -->
+	<audio id="blop">
+		<source src="sons/blop.mp3" type="audio/mp3">
+	</audio>
+	
+	<div id="regras">
+		<h3>JOGO DAS BOLHAS</h3>
+		<p>O Objetivo deste Jogo é não permitir a colisão de duas ou mais bolhas. É possível estourar as bolhas clicando sobre elas.
+		Em contrapartida, quanto maior for o tamanho da bolha, mais pontos você obtém. Boa sorte!</p>
+	
+		<select name="nivel" id="nivel" onchange="selectBg(this.value);">
+		  <option value="1">Selecione o nível</option>
+		  <option value="1">Iniciante</option>
+		  <option value="2">Intermediário</option>
+		  <option value="3">Avançado</option>
+		</select>
+		
+		<p><button onclick="NovoJogo(this)" id="novoJogo">Começar Novo Jogo</button></p>
+		<div id="scores"><label for="myScore">Score:</label><input type="text" name="myScore" readonly id="myScore" value="0" size="6"></div>
+		
+		<!-- Melhor Pontuação -->
+		<div id="bestScore"></div>
+	</div>
+	
+	<canvas height="460" id="myCanvas"></canvas>
+		
+	<!-- Pontuações parciais -->
+	<div id="points" style="position:absolute;"></div>
+	
+	<footer> 
+		Desenvolvido por: Rafael do Prado Ribeiro <br>
+		Disciplina: Programação Web
+	</footer>
+	
+	<script src="js/BubbleGame.js"> </script>
+</body>
+
+</html>

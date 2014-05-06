@@ -1,0 +1,111 @@
+canvas {
+	cursor: url(../imagens/cursor.cur), default;
+	}
+	
+body{
+	text-align:center;
+	background:url(../imagens/bg-1.png) no-repeat;
+	background-size:cover;
+	min-height:600px;
+	min-width:800px;
+}
+
+header{
+	text-align:center;
+	width:100%;
+	font-size: 28pt;
+	margin:10px 0 10px 0;
+}
+
+.visible {
+  visibility: visible;
+  color: gray;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+#regras{
+	margin: 0 auto;
+	text-align:justify;
+	width:320px;
+	border: 1px dashed black;
+	border-radius:10px;
+	padding:10px;
+	float:left;
+	margin-left: 20px;
+}
+
+h3, h4{
+	text-align:center;
+}
+
+#scores{
+	text-align:right;
+	margin-top:20px;
+}
+
+#scores input{
+	font-size:26px;
+	text-align:left;
+	font-family: Georgia;
+	background:transparent;
+	border:0;
+	padding-left:2px;
+}
+
+
+
+button{
+	border-radius:15px;
+	font-size:18px;
+}
+
+#scores label{
+	font-size:26px;
+	font-variant:small-caps;
+	margin-left:20px;
+	
+}
+
+#myCanvas{
+	background-color:#eee;
+	opacity:0.65;
+	filter:alpha(opacity=65);	
+	border: 1px solid gray;
+}
+
+sup{
+	color: gold;
+}
+
+select{
+	width: 300px;
+	
+}
+
+button , select{
+	font-size: 20px; 
+	margin-left:10px;
+	font-family: Verdana;
+	background:url(../imagens/bolhas_peq.png) rgba(222, 222, 222, 0.9);
+	color: gray; 
+	text-shadow: rgb(255, 255, 255) 0px 1px 0px; 
+	border: 1px solid rgb(187, 187, 187); 
+	box-shadow: rgb(209, 207, 209) 0px 1px 10px; 
+	-webkit-box-shadow: rgb(209, 207, 209) 0px 1px 10px; 
+	border-radius: 10px; 
+	padding: 17px 50px; 
+	cursor: pointer; 
+}
+
+button:active{cursor:pointer; position:relative; top:2px;}
+
+footer{
+	clear:left;
+	text-align:left;
+	margin-left:10px;
+	padding-top:30px;
+}
